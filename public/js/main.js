@@ -360,9 +360,9 @@ $(function () {
 });
 $(document).ready(function() {
     var e = '<div class="prt_floting_customsett">'+
-                '<a class="tmtheme_fbar_icons"><i class="fa fa-phone"></i><span>Call</span></a>'+
-                '<a class="tmtheme_fbar_icons"><i class="fa fa-envelope"></i><span>Email</span></a>'+
-                '<a class="tmtheme_fbar_icons"><i class="fa fa-whatsapp"></i><span>Chat<span></span></span></a>'+
+                '<a class="tmtheme_fbar_icons" href="tel:+447451282385"><i class="fa fa-phone"></i><span>Call</span></a>'+
+                '<a class="tmtheme_fbar_icons" href="mailto:info@gtlaboratoriessuk.com"><i class="fa fa-envelope"></i><span>Email</span></a>'+
+                '<a class="tmtheme_fbar_icons" href="https://wa.me/447451282385"><i class="fa fa-whatsapp"></i><span>Chat<span></span></span></a>'+
                 '<div class="clearfix"></div>'+
             '</div>';
 
