@@ -132,7 +132,7 @@
                                             <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-border  ttm-btn-color-dark" href="#">Appointment</a>
                                             <div id="appointment">
                                                 <h3>Keep in touch!</h3>
-                                                <form class="wrap-form appointment_form clearfix" method="post" action="#">
+                                                <form class="wrap-form appointment_form clearfix">
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <label class="form-group">
@@ -175,7 +175,7 @@
                                                             </label>
                                                         </div>
                                                         <div class="col-md-4">
-                                                            <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Book appointment</button>
+                                                            <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit" disabled>Book appointment</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -721,6 +721,7 @@
                     </div>
                 </div><!-- row end -->
                 <div class="row slick_slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "arrows":false, "autoplay":false, "infinite":true, "responsive": [{"breakpoint":991,"settings":{"slidesToShow": 3}}, {"breakpoint":678,"settings":{"slidesToShow": 2}}, {"breakpoint":460,"settings":{"slidesToShow": 1}}]}'>
+                 
                     <div class="ttm-box-col-wrapper col-lg-4">
                         <!-- featured-imagebox-team -->
                         <div class="featured-imagebox featured-imagebox-team">
@@ -771,8 +772,8 @@
                             </div>
                         </div><!-- featured-imagebox-team end-->
                     </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-team -->
+                    <!-- <div class="ttm-box-col-wrapper col-lg-4">
+                     
                         <div class="featured-imagebox featured-imagebox-team">
                             <div class="ttm-team-box-view-overlay">
                                 <div class="featured-iconbox ttm-media-link">
@@ -793,10 +794,10 @@
                                 </div>
                                 <div class="team-position">Manager</div>
                             </div>
-                        </div><!-- featured-imagebox-team end-->
-                    </div>
+                        </div>
+                    </div> -->
                     <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-team -->
+                    
                         <div class="featured-imagebox featured-imagebox-team">
                             <div class="ttm-team-box-view-overlay">
                                 <div class="featured-iconbox ttm-media-link">
@@ -842,7 +843,7 @@
                                     <h2 class="title">Join us in redefining healthcare through microbiome innovation</h2>
                                 </div>
                             </div><!-- section title end -->
-                            <form id="ttm-contactform-1" class="ttm-contactform-1 wrap-form pt-10 clearfix" method="post" action="#">
+                            <form id="ttm-contactform-1 contact_form" class="ttm-contactform-1 wrap-form pt-10 clearfix">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <label>
@@ -863,14 +864,14 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label>
-                                            <span class="text-input"><input name="phone" type="text" value="" placeholder="Subject" required="required"></span>
+                                            <span class="text-input"><input name="subject" type="text" value="" placeholder="Subject" required="required"></span>
                                         </label>
                                     </div>
                                 </div>
                                 <label>
                                     <span class="text-input"><textarea name="message" rows="5" placeholder="Message" required="required"></textarea></span>
                                 </label>
-                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Get An Appointment!</button>
+                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor" type="submit" disabled>Get An Appointment!</button>
                             </form>
                         </div>
                     </div>
@@ -1041,46 +1042,74 @@
 
 </div><!-- page end -->
 
+ <!-- Javascript -->
 
-    <!-- Javascript -->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/tether.min.js"></script>
+ <script src="js/bootstrap.min.js"></script> 
+ <script src="js/jquery.easing.js"></script>    
+ <!-- <script src="js/jquery-waypoints.js"></script>     -->
+ <script src="js/jquery-validate.js"></script> 
+ <script src="js/jquery.prettyPhoto.js"></script>
+ <script src="js/slick.min.js"></script>
+ <script src="js/numinate.min.js"></script>
+ <script src="js/imagesloaded.min.js"></script>
+ <script src="js/jquery-isotope.js"></script>
+ <script src="js/moment.min.js"></script>
+ <script src="js/bootstrap-datetimepicker.min.js"></script>
+ <script src="js/main.js"></script>
+ 
+ <script src="/js/scrollspy.js"></script>
+ <!-- Revolution Slider -->
+ <script  src='/js/revolution.tools.min.js'></script>
+ <script  src='/js/rs6.min.js'></script>
+ <script src="/js/slider.js"></script>
+ <!-- Revolution Slider -->
+ <script src="/js/jquery.themepunch.tools.min.js"></script>
+ <script src="/js/jquery.themepunch.revolution.min.js"></script>
+ <script src="/js/slider.js"></script>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/jquery.easing.js"></script>    
-    <!-- <script src="js/jquery-waypoints.js"></script>     -->
-    <script src="js/jquery-validate.js"></script> 
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/numinate.min.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/jquery-isotope.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
-    <script src="js/main.js"></script>
-    
-    <script src="/js/scrollspy.js"></script>
-    <!-- Revolution Slider -->
-    <script  src='/js/revolution.tools.min.js'></script>
-    <script  src='/js/rs6.min.js'></script>
-    <script src="/js/slider.js"></script>
-    <!-- Revolution Slider -->
-    <script src="/js/jquery.themepunch.tools.min.js"></script>
-    <script src="/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="/js/slider.js"></script>
+<!-- Javascript end-->
+<script src="js/extensions/revolution.extension.actions.min.js"></script>
+<script src="/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/js/extensions/revolution.extension.video.min.js"></script>
 
-   <!-- Javascript end-->
-   <script src="js/extensions/revolution.extension.actions.min.js"></script>
-   <script src="/js/extensions/revolution.extension.carousel.min.js"></script>
-   <script src="/js/extensions/revolution.extension.kenburn.min.js"></script>
-   <script src="/js/extensions/revolution.extension.layeranimation.min.js"></script>
-   <script src="/js/extensions/revolution.extension.migration.min.js"></script>
-   <script src="/js/extensions/revolution.extension.navigation.min.js"></script>
-   <script src="/js/extensions/revolution.extension.parallax.min.js"></script>
-   <script src="/js/extensions/revolution.extension.slideanims.min.js"></script>
-   <script src="/js/extensions/revolution.extension.video.min.js"></script>
+<!-- Javascript end-->
+<!-- AJAX Script -->
+<!-- <script src="/js/jquery2.2.4.min.js"></script> -->
+<script src="/js/jquery.easing.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<script>
+ $('#contact_form').submit(function(e) {
 
-   <!-- Javascript end-->
+  var dataString = $(this).serialize();
+
+ $.ajax({
+        type: "POST",
+        url: "/contact-us",
+        data: dataString,
+        success: function () {
+         $("#contact_form").html("<div id='message'></div>");
+         $("#message")
+         .html("<h2>Contact Form Submitted!</h2>")
+         .append("<p>We will be in touch soon.</p>")
+         .hide()
+         .fadeIn(1500, function () {
+          $("#message").append(
+             //"<img id='checkmark' src='images/check.png' />"
+         );
+    });
+}
+});
+e.preventDefault();
+});
+</script>
 
 </body>
 
